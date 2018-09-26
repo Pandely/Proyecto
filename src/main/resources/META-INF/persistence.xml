@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="pe.edu.upeu.proyecto_ProyectoMVC_war_0.0.1-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>pe.edu.upeu.proyecto.modelo.Manufacturer</class>
+    <class>pe.edu.upeu.proyecto.modelo.Product</class>
+    <class>pe.edu.upeu.proyecto.modelo.ProductCode</class>
+    <class>pe.edu.upeu.proyecto.modelo.DiscountCode</class>
+    <class>pe.edu.upeu.proyecto.modelo.Customer</class>
+    <class>pe.edu.upeu.proyecto.modelo.PurchaseOrder</class>
+    <class>pe.edu.upeu.proyecto.modelo.MicroMarket</class>
+    <class>pe.edu.upeu.proyecto.modelo.Cliente</class>
+    <class>pe.edu.upeu.proyecto.modelo.Vendedor</class>
+    <class>pe.edu.upeu.proyecto.modelo.Persona</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
+      <property name="javax.persistence.jdbc.user" value="app"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="app"/>
+    </properties>
+  </persistence-unit>
+</persistence>
